@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zaid Lahbari - Taxi & Transport Services in Marrakech. Professional driver offering taxi services, airport transfers, and guided tours throughout Morocco. Available 24/7.">
+    <meta name="keywords" content="Taxi Marrakech, Transport Morocco, Airport Transfer, Marrakech Tours, Private Driver Morocco, Zaid Lahbari">
+    <title>Zaid Lahbari - Taxi & Transport Services | Marrakech, Morocco</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚖</text></svg>">
+</head>
+<body>
+    <!-- Language Selector (Floating) -->
+    <div class="language-selector" id="languageSelector">
+        <button class="lang-btn active" data-lang="fr" aria-label="French">FR</button>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        <button class="lang-btn" data-lang="ar" aria-label="Arabic">AR</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-car-side"></i>
+                    <span class="logo-text" data-translate="logo">Zaid Lahbari</span>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" data-translate="nav.home">Accueil</a></li>
+                    <li><a href="#services" data-translate="nav.services">Services</a></li>
+                    <li><a href="#destinations" data-translate="nav.destinations">Destinations</a></li>
+                    <li><a href="#activities" data-translate="nav.activities">Activités</a></li>
+                    <li><a href="#contact" data-translate="nav.contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" style="background-image: url('assets/images/hero/hero-background.webp');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text" data-aos="fade-up">
+                    <h1 class="hero-title" data-translate="hero.title">
+                        Votre Chauffeur de Confiance à Marrakech
+                    </h1>
+                    <p class="hero-subtitle" data-translate="hero.subtitle">
+                        Services de Taxi Professionnel • Transferts Aéroport • Excursions au Maroc
+                    </p>
+                    <div class="hero-badge">
+                        <i class="fas fa-clock"></i>
+                        <span data-translate="hero.availability">Disponible 24/7</span>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/212699740404" class="btn btn-primary" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-translate="hero.whatsapp">WhatsApp Direct</span>
+                        </a>
+                        <a href="tel:+212699740404" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i>
+                            <span data-translate="hero.call">+212 6 99 74 04 04</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About/Services Section -->
+    <section class="about-services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-translate="about.title">Bienvenue au Maroc</h2>
+                <p class="section-subtitle" data-translate="about.subtitle">
+                    Le Pays des Quatre Saisons - Votre Guide Personnel pour Découvrir le Maroc
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-taxi"></i>
+                    </div>
+                    <h3 data-translate="services.taxi.title">Service Taxi</h3>
+                    <p data-translate="services.taxi.description">
+                        Transport fiable et confortable dans toute la ville de Marrakech. Véhicules modernes et climatisés pour votre confort.
+                    </p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <h3 data-translate="services.airport.title">Transferts Aéroport</h3>
+                    <p data-translate="services.airport.description">
+                        Service de navette entre l'aéroport et votre hôtel. Ponctualité garantie et service personnalisé.
+                    </p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <h3 data-translate="services.minibus.title">Mini-Bus Privé</h3>
+                    <p data-translate="services.minibus.description">
+                        Voyages en groupe à travers le Maroc. Confortable et spacieux pour toute la famille ou entre amis.
+                    </p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 data-translate="services.tours.title">Excursions Guidées</h3>
+                    <p data-translate="services.tours.description">
+                        Découvrez les merveilles du Maroc avec un guide local expérimenté. Itinéraires personnalisés selon vos envies.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Why Choose Us -->
+            <div class="why-choose" data-aos="fade-up">
+                <h3 class="subsection-title" data-translate="why.title">Pourquoi Me Choisir ?</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span data-translate="why.price">Meilleurs Prix Garantis</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-user-shield"></i>
+                        <span data-translate="why.professional">Chauffeur Professionnel</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-language"></i>
+                        <span data-translate="why.multilingual">Multilingue (FR/EN/AR)</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-clock"></i>
+                        <span data-translate="why.flexible">Horaires Flexibles</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-car"></i>
+                        <span data-translate="why.comfort">Véhicules Confortables</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-star"></i>
+                        <span data-translate="why.experience">10+ Ans d'Expérience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marrakech Attractions -->
+    <section class="attractions" id="marrakech-sites">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-translate="attractions.title">Sites Incontournables de Marrakech</h2>
+                <p class="section-subtitle" data-translate="attractions.subtitle">
+                    Découvrez la Perle du Sud avec un Guide Local
+                </p>
+            </div>
+
+            <div class="attractions-grid">
+                <div class="attraction-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="attraction-image">
+                        <img src="assets/images/attractions/majorelle-gardens.jpg" alt="Jardins de Majorelle" loading="lazy">
+                    </div>
+                    <div class="attraction-content">
+                        <h3 data-translate="attractions.majorelle">Jardins de Majorelle</h3>
+                    </div>
+                </div>
+
+                <div class="attraction-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="attraction-image">
+                        <img src="assets/images/attractions/bahia-palace.jpg" alt="Palais Bahia" loading="lazy">
+                    </div>
+                    <div class="attraction-content">
+                        <h3 data-translate="attractions.bahia">Palais Bahia</h3>
+                    </div>
+                </div>
+
+                <div class="attraction-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="attraction-image">
+                        <img src="assets/images/attractions/badiaa-palace.jpg" alt="Palais Badiaa" loading="lazy">
+                    </div>
+                    <div class="attraction-content">
+                        <h3 data-translate="attractions.badiaa">Palais Badiaa</h3>
+                    </div>
+                </div>
+
+                <div class="attraction-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="attraction-image">
+                        <img src="assets/images/attractions/saadian-tombs.jpg" alt="Tombeaux Saadiens" style="object-position: bottom;" loading="lazy">
+                    </div>
+                    <div class="attraction-content">
+                        <h3 data-translate="attractions.saadiens">Tombeaux Saadiens</h3>
+                    </div>
+                </div>
+
+                <div class="attraction-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="attraction-image">
+                        <img src="assets/images/attractions/koutoubia-mosque.jpg" alt="Mosquée Koutoubia" loading="lazy">
+                    </div>
+                    <div class="attraction-content">
+                        <h3 data-translate="attractions.koutoubia">Mosquée Koutoubia</h3>
+                    </div>
+                </div>
+
+                <div class="attraction-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="attraction-image">
+                        <img src="assets/images/attractions/menara-gardens.jpg" alt="Jardins de la Menara" loading="lazy">
+                    </div>
+                    <div class="attraction-content">
+                        <h3 data-translate="attractions.menara">Jardins de la Menara</h3>
+                    </div>
+                </div>
+
+                <div class="attraction-card" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="attraction-image">
+                        <img src="assets/images/attractions/jemaa-el-fnaa.jpg" alt="Place Jamaa Lafna" loading="lazy">
+                    </div>
+                    <div class="attraction-content">
+                        <h3 data-translate="attractions.jemaa">Place Jamaa Lafna</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Slider -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-translate="destinations.title">Excursions & Transferts</h2>
+                <p class="section-subtitle" data-translate="destinations.subtitle">
+                    Explorez les Plus Beaux Sites du Maroc
+                </p>
+            </div>
+
+            <div class="slider-container" data-aos="fade-up">
+                <div class="slider-wrapper" id="destinationsSlider">
+                    <!-- Ourika -->
+                    <div class="slide active">
+                        <div class="slide-image">
+                            <img src="assets/images/destinations/ourika-valley.jpg" alt="Vallée d'Ourika" loading="lazy">
+                        </div>
+                        <div class="slide-content">
+                            <h3 data-translate="destinations.ourika.title">Vallée d'Ourika</h3>
+                            <p data-translate="destinations.ourika.description">
+                                Cascades spectaculaires et villages berbères au pied de l'Atlas. Une journée de fraîcheur à 1h de Marrakech.
+                            </p>
+                            <div class="slide-details">
+                                <span><i class="fas fa-clock"></i> <span data-translate="destinations.ourika.duration">Journée complète</span></span>
+                                <span><i class="fas fa-road"></i> 65 km</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Essaouira -->
+                    <div class="slide">
+                        <div class="slide-image">
+                            <img src="assets/images/destinations/essaouira.webp" alt="Essaouira" loading="lazy">
+                        </div>
+                        <div class="slide-content">
+                            <h3 data-translate="destinations.essaouira.title">Essaouira</h3>
+                            <p data-translate="destinations.essaouira.description">
+                                Ville côtière fortifiée classée à l'UNESCO. Plages magnifiques, médina authentique et ambiance maritime unique.
+                            </p>
+                            <div class="slide-details">
+                                <span><i class="fas fa-clock"></i> <span data-translate="destinations.essaouira.duration">Journée complète</span></span>
+                                <span><i class="fas fa-road"></i> 175 km</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ouzoud -->
+                    <div class="slide">
+                        <div class="slide-image">
+                            <img src="assets/images/destinations/ouzoud-waterfalls.jpg" alt="Cascades d'Ouzoud" loading="lazy">
+                        </div>
+                        <div class="slide-content">
+                            <h3 data-translate="destinations.ouzoud.title">Cascades d'Ouzoud</h3>
+                            <p data-translate="destinations.ouzoud.description">
+                                Les plus hautes cascades d'Afrique du Nord (110m). Rencontrez les singes macaques et profitez d'une baignade rafraîchissante.
+                            </p>
+                            <div class="slide-details">
+                                <span><i class="fas fa-clock"></i> <span data-translate="destinations.ouzoud.duration">Journée complète</span></span>
+                                <span><i class="fas fa-road"></i> 150 km</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ouarzazate -->
+                    <div class="slide">
+                        <div class="slide-image">
+                            <img src="assets/images/destinations/ouarzazate.jpg" alt="Ouarzazate" loading="lazy">
+                        </div>
+                        <div class="slide-content">
+                            <h3 data-translate="destinations.ouarzazate.title">Ouarzazate</h3>
+                            <p data-translate="destinations.ouarzazate.description">
+                                La "Porte du Désert" et capitale du cinéma marocain. Kasbahs majestueuses et paysages désertiques époustouflants.
+                            </p>
+                            <div class="slide-details">
+                                <span><i class="fas fa-clock"></i> <span data-translate="destinations.ouarzazate.duration">2 jours / 1 nuit</span></span>
+                                <span><i class="fas fa-road"></i> 196 km</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Casablanca -->
+                    <div class="slide">
+                        <div class="slide-image">
+                            <img src="assets/images/destinations/casablanca.webp" alt="Casablanca" loading="lazy">
+                        </div>
+                        <div class="slide-content">
+                            <h3 data-translate="destinations.casablanca.title">Casablanca</h3>
+                            <p data-translate="destinations.casablanca.description">
+                                Capitale économique du Maroc. Mosquée Hassan II, corniche océanique et architecture Art Déco.
+                            </p>
+                            <div class="slide-details">
+                                <span><i class="fas fa-clock"></i> <span data-translate="destinations.casablanca.duration">Journée complète</span></span>
+                                <span><i class="fas fa-road"></i> 240 km</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Agadir -->
+                    <div class="slide">
+                        <div class="slide-image">
+                            <img src="assets/images/destinations/agadir.jpg" alt="Agadir" loading="lazy">
+                        </div>
+                        <div class="slide-content">
+                            <h3 data-translate="destinations.agadir.title">Agadir</h3>
+                            <p data-translate="destinations.agadir.description">
+                                Station balnéaire moderne avec 300 jours de soleil par an. Plages de sable doré et ambiance relaxante.
+                            </p>
+                            <div class="slide-details">
+                                <span><i class="fas fa-clock"></i> <span data-translate="destinations.agadir.duration">2-3 jours</span></span>
+                                <span><i class="fas fa-road"></i> 254 km</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Agafay Desert -->
+                    <div class="slide">
+                        <div class="slide-image">
+                            <img src="assets/images/destinations/agafay-desert.webp" alt="Désert d'Agafay" loading="lazy">
+                        </div>
+                        <div class="slide-content">
+                            <h3 data-translate="destinations.agafay.title">Désert d'Agafay</h3>
+                            <p data-translate="destinations.agafay.description">
+                                Expérience désertique à 30 minutes de Marrakech. Dîner sous les étoiles et coucher de soleil magique.
+                            </p>
+                            <div class="slide-details">
+                                <span><i class="fas fa-clock"></i> <span data-translate="destinations.agafay.duration">Demi-journée / Soirée</span></span>
+                                <span><i class="fas fa-road"></i> 40 km</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <button class="slider-btn prev" id="prevBtn" aria-label="Previous slide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn next" id="nextBtn" aria-label="Next slide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Slider Dots -->
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="activities" id="activities">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-translate="activities.title">Activités & Expériences</h2>
+                <p class="section-subtitle" data-translate="activities.subtitle">
+                    Vivez des Moments Inoubliables au Maroc
+                </p>
+            </div>
+
+            <div class="activities-grid">
+                <div class="activity-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="activity-icon">
+                        <i class="fas fa-motorcycle"></i>
+                    </div>
+                    <h3 data-translate="activities.quad.title">Quad & Buggy</h3>
+                    <p data-translate="activities.quad.description">
+                        Sensations fortes dans le désert d'Agafay ou la palmeraie de Marrakech.
+                    </p>
+                </div>
+
+                <div class="activity-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="activity-icon">
+                        <i class="fas fa-horse"></i>
+                    </div>
+                    <h3 data-translate="activities.camel.title">Balade à Dromadaire</h3>
+                    <p data-translate="activities.camel.description">
+                        Expérience authentique au coucher du soleil dans le désert marocain.
+                    </p>
+                </div>
+
+                <div class="activity-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="activity-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 data-translate="activities.hammam.title">Hammam & Massage</h3>
+                    <p data-translate="activities.hammam.description">
+                        Détente totale dans un hammam traditionnel avec gommage et massage.
+                    </p>
+                </div>
+
+                <div class="activity-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="activity-icon">
+                        <i class="fas fa-parachute-box"></i>
+                    </div>
+                    <h3 data-translate="activities.balloon.title">Vol en Montgolfière</h3>
+                    <p data-translate="activities.balloon.description">
+                        Survolez Marrakech et l'Atlas au lever du soleil. Vue panoramique époustouflante.
+                    </p>
+                </div>
+
+                <div class="activity-card" data-aos="flip-left" data-aos-delay="500">
+                    <div class="activity-icon">
+                        <i class="fas fa-hiking"></i>
+                    </div>
+                    <h3 data-translate="activities.hiking.title">Randonnées Atlas</h3>
+                    <p data-translate="activities.hiking.description">
+                        Trekkings guidés dans les montagnes de l'Atlas et villages berbères.
+                    </p>
+                </div>
+
+                <div class="activity-card" data-aos="flip-left" data-aos-delay="600">
+                    <div class="activity-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 data-translate="activities.cooking.title">Cours de Cuisine</h3>
+                    <p data-translate="activities.cooking.description">
+                        Apprenez à préparer un tajine ou couscous traditionnel marocain.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-translate="testimonials.title">Avis de Voyageurs</h2>
+                <p class="section-subtitle" data-translate="testimonials.subtitle">
+                    Ce Que Disent Mes Clients
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text" data-translate="testimonials.1.text">
+                        "Zaid est un excellent chauffeur, très professionnel et ponctuel. Il nous a fait découvrir les plus beaux endroits de Marrakech et des alentours. Je recommande vivement !"
+                    </p>
+                    <div class="testimonial-author">
+                        <strong data-translate="testimonials.1.name">Sophie M.</strong>
+                        <span data-translate="testimonials.1.country">France</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text" data-translate="testimonials.2.text">
+                        "Best taxi driver in Marrakech! Zaid took us to Essaouira and made our trip unforgettable. Very friendly and knows all the hidden gems. Highly recommended!"
+                    </p>
+                    <div class="testimonial-author">
+                        <strong data-translate="testimonials.2.name">John D.</strong>
+                        <span data-translate="testimonials.2.country">United Kingdom</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-text" data-translate="testimonials.3.text">
+                        "خدمة ممتازة وسائق محترف جدًا. زيد شخص ودود ويعرف كل الأماكن السياحية الجميلة. أنصح به بشدة لأي شخص يزور مراكش."
+                    </div>
+                    <div class="testimonial-author">
+                        <strong data-translate="testimonials.3.name">Ahmed K.</strong>
+                        <span data-translate="testimonials.3.country">Dubaï, EAU</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-translate="contact.title">Réservez Votre Trajet</h2>
+                <p class="section-subtitle" data-translate="contact.subtitle">
+                    Contactez-Moi Maintenant pour Toute Demande de Transport ou Excursion
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <i class="fas fa-user"></i>
+                        <h3 data-translate="contact.name">Zaid Lahbari</h3>
+                        <p data-translate="contact.profession">Chauffeur Professionnel</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3 data-translate="contact.location">Marrakech, Maroc</h3>
+                        <p data-translate="contact.coverage">Service dans tout le Maroc</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>+212 6 99 74 04 04</h3>
+                        <a href="tel:+212699740404" class="btn btn-outline">
+                            <i class="fas fa-phone-alt"></i>
+                            <span data-translate="contact.callnow">Appeler Maintenant</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>WhatsApp</h3>
+                        <a href="https://wa.me/212699740404" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-translate="contact.whatsapp">Envoyer un Message</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <a href="mailto:Zaidsayfdln2@gmail.com">Zaidsayfdln2@gmail.com</a>
+                    </div>
+
+                    <div class="contact-card availability">
+                        <i class="fas fa-clock"></i>
+                        <h3 data-translate="contact.hours">Horaires de Travail</h3>
+                        <p data-translate="contact.available">Disponible 24/7</p>
+                        <small data-translate="contact.response">Réponse rapide garantie</small>
+                    </div>
+                </div>
+
+                <div class="contact-cta-wrapper" data-aos="fade-left">
+                    <div class="contact-cta-content">
+                        <h3 data-translate="contact.ready">Prêt à Réserver ?</h3>
+                        <p data-translate="contact.cta.text">Contactez-moi directement via WhatsApp ou téléphone pour une réponse immédiate et personnalisée.</p>
+                        
+                        <div class="cta-buttons">
+                            <a href="https://wa.me/212699740404?text=Bonjour%20Zaid,%20je%20suis%20intéressé%20par%20vos%20services" class="btn btn-whatsapp-large" target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp"></i>
+                                <span data-translate="contact.quickwhatsapp">Message WhatsApp</span>
+                            </a>
+                            <a href="tel:+212699740404" class="btn btn-primary btn-large">
+                                <i class="fas fa-phone-alt"></i>
+                                <span data-translate="contact.callnow">Appeler Maintenant</span>
+                            </a>
+                        </div>
+                        
+                        <div class="contact-divider">
+                            <span data-translate="contact.or">ou</span>
+                        </div>
+                        
+                        <a href="mailto:Zaidsayfdln2@gmail.com" class="btn btn-outline btn-large">
+                            <i class="fas fa-envelope"></i>
+                            <span>Zaidsayfdln2@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">
+                        <i class="fas fa-car-side"></i>
+                        Zaid Lahbari
+                    </h3>
+                    <p data-translate="footer.description">
+                        Votre partenaire de confiance pour tous vos déplacements et découvertes au Maroc. Service professionnel depuis plus de 10 ans.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/212699740404" target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:Zaidsayfdln2@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+212699740404" aria-label="Phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-translate="footer.services.title">Nos Services</h4>
+                    <ul>
+                        <li data-translate="footer.services.taxi">Taxi Marrakech</li>
+                        <li data-translate="footer.services.airport">Transferts Aéroport</li>
+                        <li data-translate="footer.services.excursions">Excursions Guidées</li>
+                        <li data-translate="footer.services.minibus">Location Mini-Bus</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-translate="footer.destinations.title">Destinations Populaires</h4>
+                    <ul>
+                        <li>Essaouira</li>
+                        <li>Ouarzazate</li>
+                        <li>Cascades d'Ouzoud</li>
+                        <li>Désert d'Agafay</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-translate="footer.contact.title">Contact Rapide</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+212699740404">+212 6 99 74 04 04</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:Zaidsayfdln2@gmail.com">Zaidsayfdln2@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Marrakech, Maroc</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span data-translate="footer.contact.available">Disponible 24/7</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    &copy; <span id="currentYear"></span> Zaid Lahbari - <span data-translate="footer.rights">Tous droits réservés</span>
+                </p>
+                <p>
+                    <span data-translate="footer.madewith">Fait avec</span> <i class="fas fa-heart"></i> <span data-translate="footer.in">à</span> Marrakech
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/212699740404" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
