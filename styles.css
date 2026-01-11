@@ -166,10 +166,10 @@ ul {
     letter-spacing: -0.5px;
 }
 
-.logo i {
+.logo img {
     width: 42px;
     height: 42px;
-    background: var(--primary-yellow);
+    background:rgba(0, 0, 0, 0.15);
     color: var(--black);
     font-size: 1.25rem;
     display: flex;
