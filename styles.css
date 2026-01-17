@@ -964,6 +964,10 @@ section {
     color: var(--primary-yellow);
 }
 
+.contact-card .btn-whatsapp .fa-whatsapp, .contact-card .btn-whatsapp span {
+    color: var(--white);
+}
+
 .contact-card:hover i {
     color: var(--black);
 }
