@@ -201,7 +201,8 @@ const translations = {
             },
             rights: "Tous droits réservés",
             madewith: "Fait avec",
-            in: "à"
+            in: "à",
+            createdby: "Site créé par"
         }
     },
     en: {
@@ -403,7 +404,8 @@ const translations = {
             },
             rights: "All rights reserved",
             madewith: "Made with",
-            in: "in"
+            in: "in",
+            createdby: "Website created by"
         }
     },
     ar: {
@@ -605,7 +607,8 @@ const translations = {
             },
             rights: "جميع الحقوق محفوظة",
             madewith: "صُنع بـ",
-            in: "في"
+            in: "في",
+            createdby: "تم إنشاء الموقع بواسطة"
         }
     }
 };
@@ -713,11 +716,8 @@ function loadLanguagePreference() {
     if (savedLang) {
         changeLanguage(savedLang);
     } else {
-        // Detect browser language
-        const browserLang = navigator.language.split('-')[0];
-        const supportedLangs = ['fr', 'en', 'ar'];
-        const detectedLang = supportedLangs.includes(browserLang) ? browserLang : 'fr';
-        changeLanguage(detectedLang);
+        // Default to English
+        changeLanguage('en');
     }
 }
 
