@@ -617,7 +617,7 @@ const translations = {
 // Global Variables
 // ===================================
 let currentSlide = 0;
-let currentLanguage = 'fr';
+let currentLanguage = 'en';
 let isAutoPlaying = true;
 let autoPlayInterval;
 
@@ -712,11 +712,9 @@ function getNestedTranslation(obj, path) {
 
 function loadLanguagePreference() {
     const savedLang = localStorage.getItem('preferredLanguage');
-    
-    if (savedLang) {
+    if (savedLang && ['fr', 'en', 'ar'].includes(savedLang)) {
         changeLanguage(savedLang);
     } else {
-        // Default to English
         changeLanguage('en');
     }
 }
